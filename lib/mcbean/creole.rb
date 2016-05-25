@@ -114,7 +114,7 @@ class McBean
             new_text node, %Q{[[#{node['href']}|#{node.text}]]}
           end
         else
-          if Loofah::HashedElements::BLOCK_LEVEL[node.name]
+          if Loofah::Elements::BLOCK_LEVEL.include?(node.name)
             new_text node, "\n#{node.content}\n"
           else
             nil
