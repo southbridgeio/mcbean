@@ -77,6 +77,7 @@ Mcbean = McBean
 require "mcbean/markdown"
 require "mcbean/textile"
 require "mcbean/creole"
+require "mcbean/redmine_textile"
 
 if Loofah::VERSION < McBean::REQUIRED_LOOFAH_VERSION
   raise RuntimeError, "McBean requires Loofah #{McBean::REQUIRED_LOOFAH_VERSION} or later (currently #{Loofah::VERSION})"
