@@ -78,7 +78,7 @@ class McBean
           new_text node, "\n#{fragment.join("\n")}\n"
         when "code"
           if node.parent.name == "pre"
-            new_text node, "```#{node[:class]}\n#{node.content}\n```"
+            new_text node, "```#{node[:class]}#{node.content}```"
           else
             nil
           end
